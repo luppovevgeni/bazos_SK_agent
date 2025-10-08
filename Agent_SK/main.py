@@ -458,7 +458,7 @@ def go_to_ad(page, question):
         click_maybe_navigates(page, img, may_navigate=True)
     human_like_sleep(*WAIT_M)
     if 'Forbidden' in page.content():
-        return [False, 8]
+        return False
     n = question['n']
     for i in range(7, n, 7):
         locator = page.locator(f'a[href$="/{(i - 1)*20}/"]:text-is("{i}")').first
