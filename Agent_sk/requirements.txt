@@ -1,6 +1,0 @@
-pymongo==4.11.1
-requests==2.32.3
-playwright==1.51.0
-pyautogui==0.9.54
-beautifulsoup4==4.13.5
-tzdata==2025.2
